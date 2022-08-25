@@ -4,7 +4,7 @@
 
 <b>
 My Post.Archlinux.Installation.Script</b> <br>
-because I am too lazy to type all the fucking commands <br>
+I am a linux newbie and I am too lazy to type all the fucking commands <br>
 every after clean installation <br> <br>
 
 ===========================================================================
