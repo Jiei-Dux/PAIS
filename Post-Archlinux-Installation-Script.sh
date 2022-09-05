@@ -1,52 +1,52 @@
 #! /usr/bin/env bash 
   
-menu () { 
+  menu () { 
     while true 
-    do 
-        clear 
+    do 
+      clear 
                                   
-        echo 
-        echo " Post Archlinux Installation Script" 
-        echo " <-------------------------------->" 
+      echo 
+      echo " Post Archlinux Installation Script" 
+      echo " <-------------------------------->" 
                                   
-        echo 
-        echo " 1) Packages" 
-        echo " 2) Mirrors" 
+      echo 
+      echo " 1) Packages" 
+      echo " 2) Mirrors" 
                                   
-        echo 
-        echo " 3) Dotfiles" 
+      echo 
+      echo " 3) Dotfiles" 
   
-        echo 
-        echo " E|e) Exit" 
+      echo 
+      echo " E|e) Exit" 
   
-        echo 
-        echo " <-------------------------------->" 
+      echo 
+      echo " <-------------------------------->" 
   
-        echo 
-        read -p " Enter your choice: " VarMain 
+      echo 
+      read -p " Enter your choice: " VarMain 
   
-        case $VarMain in 
+      case $VarMain in 
   
-            1)      Pkgs;; 
-            2)      Mrrs;; 
+        1)      Pkgs;; 
+        2)      Mrrs;; 
                                                   
-            3)      DotF;; 
+        3)      DotF;; 
   
-            e|E)    Exit;; 
+        e|E)    Exit;; 
   
-        esac 
+      esac 
     done 
-} 
+  } 
   
   
   
   
   
-########### 
-# VARMAIN # 
-########### 
+  ########### 
+  # VARMAIN # 
+  ########### 
   
-Pkgs () { 
+  Pkgs () { 
     clear 
                   
     echo 
@@ -64,10 +64,10 @@ Pkgs () {
   
         3)  INS-Pkgs;; 
     esac 
-} 
+  } 
   
   
-Mrrs () { 
+  Mrrs () { 
     clear 
   
     echo 
@@ -79,34 +79,34 @@ Mrrs () {
         1)  InsRefl;; 
         2)  UpdMrrs;; 
     esac 
-} 
+  } 
   
   
-DotF () { 
+  DotF () { 
     clear
                  
     echo
     cd /home/$USER/ && mkdir Git\ Repo 
     git clone https://github.com/Jiei-720p/i3-gaps-dotfiles
     clear
-}
+  }
   
   
-Exit () { 
+  Exit () { 
     clear 
     exit 
-} 
+  } 
   
   
   
   
   
   
-########### 
-# VARPKGS # 
-########### 
+  ########### 
+  # VARPKGS # 
+  ########### 
   
-UPG-Pkgs () { 
+  UPG-Pkgs () { 
     clear 
   
     echo 
@@ -122,10 +122,10 @@ UPG-Pkgs () {
     && sleep 1
   
     clear 
-} 
+  } 
 
 
-UPD-Pkgs () { 
+  UPD-Pkgs () { 
     clear 
   
     echo 
@@ -139,17 +139,17 @@ UPD-Pkgs () {
     && sleep 1 \
     
     clear 
-} 
+  } 
   
   
   
   
   
-########### 
-# VARMRRS # 
-########### 
+  ########### 
+  # VARMRRS # 
+  ########### 
   
-InsRefl () { 
+  InsRefl () { 
     clear 
   
     echo 
@@ -177,10 +177,10 @@ InsRefl () {
         sleep 1
         clear
     fi
-}
+  }
   
   
-UpdMrrs () { 
+  UpdMrrs () { 
     clear 
   
     echo 
@@ -208,17 +208,17 @@ UpdMrrs () {
         fi
     
     clear 
-} 
+  } 
   
   
   
   
   
-########## 
-# VARINS # 
-########## 
+  ########## 
+  # VARINS # 
+  ########## 
   
-INS-Pkgs () { 
+  INS-Pkgs () { 
     echo 
     echo " 1) Editing Documents" 
     echo " 2) Editing Media" 
@@ -233,30 +233,30 @@ INS-Pkgs () {
         2) InsMed;;
         3) InsGmg;;
         4) InsTerm;;
-} 
+  } 
   
   
   
   
   
- ########## 
- # RETURN # 
- ########## 
+  ########## 
+  # RETURN # 
+  ########## 
   
- Return () { 
+  Return () { 
                  echo " Suit yourself..." 
                  sleep 1 
   
                  echo " Returning to Main Menu..." 
                  sleep 1 
                  clear 
- } 
+  } 
   
   
   
   
   
-######## 
-# LOOP # 
-######## 
-menu
+  ######## 
+  # LOOP # 
+  ######## 
+  menu
